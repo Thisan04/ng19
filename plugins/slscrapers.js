@@ -167,7 +167,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
       
      
 
-    Asiata.addcommand({pattern: 'videjajajo ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -234,7 +234,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: " ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"}) 
         }
           })
           .catch(
@@ -265,7 +265,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"}) 
         }
           })
           .catch(
@@ -286,7 +286,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
-            return await message.reply('*🍁 ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+            return await message.reply('*🐼 ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
             + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
@@ -551,7 +551,7 @@ else if (config.WORKTYPE == 'public') {
     
     Asiata.addcommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text, {quoted: message.data});
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
@@ -676,7 +676,7 @@ else if (config.WORKTYPE == 'public') {
   
       
 	
-	Asiata.addcommand({pattern: 'vihwjsjsjdeo ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+	Asiata.addcommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -744,7 +744,7 @@ else if (config.WORKTYPE == 'public') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"}) 
         }
           })
           .catch(
@@ -775,7 +775,7 @@ else if (config.WORKTYPE == 'public') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"}) 
         }
           })
           .catch(
@@ -823,7 +823,7 @@ else if (config.WORKTYPE == 'public') {
             const response = await got(url);
             const json = JSON.parse(response.body);
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🔱 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text, {quoted: message.data});
+            '*🐼' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text, {quoted: message.data});
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text, {quoted: message.data});
         }
@@ -908,7 +908,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🐼 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
