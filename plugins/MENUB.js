@@ -390,7 +390,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid3"},
         {title: '🐼 LOGO PACK 01 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -591,7 +591,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid5"},
         {title: '🐼 LOGO PACK 02 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 2*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 2*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -1192,7 +1192,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid3"},
         {title: '🐼 LOGO PACK 01 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -1393,7 +1393,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid5"},
         {title: '🐼 LOGO PACK 02 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 2*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 2*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
