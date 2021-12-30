@@ -167,7 +167,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
       
      
 
-    Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'videooo ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -676,7 +676,7 @@ else if (config.WORKTYPE == 'public') {
   
       
 	
-	Asiata.addcommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+	Asiata.addcommand({pattern: 'videooo ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
