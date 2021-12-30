@@ -246,7 +246,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
          🐼 POWERD BY 🐼
    ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋
   
-       🐼       Hiruwa        🐼
+       🐼       THISAN         🐼
 ` , rowId:"rowid1"},
         {title: '🐼 ADVANCE MENU 🐼', description:`➶➶➶➶➶➶\n\n\n
 ╔═══════════════════════╗
@@ -545,7 +545,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid3"},
         {title: '🐼 LOGO PACK 01 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -746,7 +746,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid5"},
         {title: '🐼 LOGO PACK 02 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 2*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 2*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -1198,7 +1198,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
          🐼 POWERD BY 🐼
    ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋
   
-       🐼       Hiruwa        🐼
+       🐼       THISAN         🐼
 ` , rowId:"rowid1"},
         {title: '🐼 ADVANCE MENU 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔═══════════════════════╗
@@ -1497,7 +1497,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid3"},
         {title: '🐼 LOGO PACK 01 🐼', description:`➶➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -1698,7 +1698,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid5"},
         {title: '🐼 LOGO PACK 02 🐼', description:`➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -1902,7 +1902,7 @@ Example : .covid Sri Lanka💝
  ╰────────────────
 `, rowId:"rowid8"},
         {title: '🐼 ABOUT SL-ASIATA BOT 🐼', description: `➶➶➶➶➶➶\n\n\n
-🕊️ Developer : Hiruwa
+🕊️ Developer : THISAN
 🕊️ Bot             : SL-ASIATA V 3.0.0 
 🕊️ Language : Sinhala & English
 🕊️ Sponcer Team : 2021©RavanaTech
@@ -1919,7 +1919,7 @@ Example : .covid Sri Lanka💝
        const sections = [{title: "🐼 SL-ASIATA Command Panel 🐼", rows: rows}]
        
        const button = {
-        buttonText: 'Click Me➶',
+        buttonText: '🇱🇰Click Me💝',
         description: "🐼 SL-ASIATA COMMAND PANEL 🐼",
         sections: sections,
         listType: 1
@@ -2162,7 +2162,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
          🐼 POWERD BY 🐼
    ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋
   
-       🐼       Hiruwa        🐼
+       🐼       THISAN        🐼
 ` , rowId:"rowid1"},
         {title: '🐼 ADVANCE MENU 🐼', description: `➶➶➶➶➶➶\n\n\n
 ╔═══════════════════════╗
@@ -2461,7 +2461,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid3"},
         {title: '🐼 LOGO PACK 01 🐼', description:`➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -2662,7 +2662,7 @@ Example : .covid Sri Lanka💝
 `, rowId:"rowid5"},
         {title: '🐼 LOGO PACK 02 🐼', description:`➶➶➶➶➶➶\n\n\n
 ╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -2866,7 +2866,7 @@ Example : .covid Sri Lanka💝
  ╰────────────────
 `, rowId:"rowid8"},
         {title: '🐼 ABOUT SL-ASIATA BOT 🐼', description: `➶➶➶➶➶➶\n\n\n
-🕊️ Developer : Hiruwa
+🕊️ Developer : THISAN 
 🕊️ Bot             : SL-ASIATA V 3.0.0 
 🕊️ Language : Sinhala & English
 🕊️ Sponcer Team : 2021©RavanaTech
@@ -2883,7 +2883,7 @@ Example : .covid Sri Lanka💝
        const sections = [{title: "🐼 SL-ASIATA Command Panel 🐼", rows: rows}]
        
        const button = {
-        buttonText: 'Click Me➶',
+        buttonText: '🇱🇰Click Me💝',
         description: "🐼 SL-ASIATA COMMAND PANEL 🐼",
         sections: sections,
         listType: 1
