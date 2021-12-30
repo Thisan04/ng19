@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: /Asiata/Dockerfile
+run:
+   worker: npm start
