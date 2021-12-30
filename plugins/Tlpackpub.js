@@ -13,7 +13,7 @@ if (Config.WORKTYPE == 'public') {
         var ttinullimage = await axios.get(`https://telegra.ph/file/5e6b637122b3353a7902b.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔══════════════════════
-║❌ 🕊️*REX LOGO PACK 1*🕊️ ❌
+║❌ 🕊️*SL LOGO PACK 1*🕊️ ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
