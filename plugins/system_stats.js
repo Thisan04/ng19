@@ -23,17 +23,17 @@ if (Config.WORKTYPE == 'private') {
  ]
 
 const btn = {
-   // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "▷ How Are You ▷",
-    footerText: 'SL-ASIATA BOT ▷',
+   // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
+    contentText: "😇 How Are You 🙃",
+    footerText: '🐼 SL-ASIATA BOT 🇱🇰',
     buttons: buttons,
     headerType: 1
 }
 
             
-            var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/1851f11236282e46d5360.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. 🕊️```\n\n🕊️ My name :  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋\n\n🕊️ Developer: THISAN\n\n🕊️Thank You For Using  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 👨‍💻ASIATA බොටා 😈\n\n🕊️ Developer: THISAN\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -45,9 +45,9 @@ const btn = {
   {buttonId: 'MNU', buttonText: {displayText: '.rules'}, type: 1},
   ]
 const btn = {
-   // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "▷ CLICK MENU BUTTON TO GET MENU ▷",
-    footerText: 'BY SL-ASIATA BOT ▷',
+   // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
+    contentText: "😇 CLICK MENU BUTTON TO GET MENU 🙃",
+    footerText: '🐼BY SL-ASIATA BOT🇱🇰',
     buttons: buttons,
     headerType: 1
 }
@@ -82,7 +82,7 @@ const btn = {
                 `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 3.0.0 Public'+
-                `\n\n🕊️ Check github for bot: https://github.com/Thisan05/SL-ASIATA`
+                `\n\n🕊️ Check github for bot: https://github.com/Thisan04/SL-ASIATA`
            , MessageType.text);
             
         }));
@@ -100,14 +100,14 @@ else if (Config.WORKTYPE == 'public') {
 
 const btn = {
    // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "❤ HOW ARE YOU ❤",
-    footerText: 'BY SL-ASIATA BOT ▷',
+    contentText: "😇 HOW ARE YOU 🙃",
+    footerText: '🐼BY SL-ASIATA BOT🇱🇰',
     buttons: buttons,
     headerType: 1
 }
 
             
-            var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/1851f11236282e46d5360.jpg', {responseType: 'arraybuffer'})
        
 
        await message.client.updatePresence(message.jid,Presence.composing)
@@ -115,7 +115,7 @@ const btn = {
         await new Promise(r => setTimeout(r, 1000));
 
  
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. 🕊️```\n\n🕊️ My name :  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋\n\n🕊️ Developer: THISAN\n\n🕊️Thank You For Using  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 👨‍💻ASIATA බොටා 😈\n\n🕊️ Developer: THISAN\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -127,9 +127,9 @@ const btn = {
   {buttonId: 'MEN', buttonText: {displayText: '.rules'}, type: 1},
   ]
 const btn = {
-   // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "❤ HOW ARE YOU ❤",
-    footerText: 'BY SL-ASIATA BOT ▷',
+   // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
+    contentText: "😇 HOW ARE YOU 🙃",
+    footerText: '🐼BY SL-ASIATA BOT🇱🇰',
     buttons: buttons,
     headerType: 1
 }
@@ -170,7 +170,7 @@ const btn = {
                 `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 3.0.0 - Public'+
-                `\n\n🕊️ Check github for bot:  https://github.com/Thisan05/SL-ASIATA`
+                `\n\n🕊️ Check github for bot:  https://github.com/Thisan04/SL-ASIATA`
            , MessageType.text);
             
         }));
