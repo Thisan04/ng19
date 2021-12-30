@@ -37,7 +37,7 @@ Asiata.addcommand({pattern: 'plug ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC,
     var response = await got(url);
     if (response.statusCode == 200) {
         // plugin adı
-        var plugin_name = response.body.match(/addrex\({.*pattern: ["'](.*)["'].*}/);
+        var plugin_name = response.body.match(/addcommand\({.*pattern: ["'](.*)["'].*}/);
         if (plugin_name.length >= 1) {
             plugin_name = "." + plugin_name[1];
         } else {
@@ -69,7 +69,7 @@ Asiata.addcommand({pattern: 'myplugin', fromMe: true, desc: Lang.PLUGIN_DESC }, 
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('Dark-Knight-Hiruwa') ? msg : inmsg
+                let vf = plugin.dataValues.url.includes('Thisan04') ? msg : inmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + '🐼  \n' + vf + '\n\n';
             }
         );
