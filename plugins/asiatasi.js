@@ -277,11 +277,11 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
 
 *✖ විස්තරය:* 💝ඔබ mention කරන text එක carbon.sh මඟින් carbon image කරයි.💝
 
-*🕊️ විධානය:* 💝.tgm💝
+*🕊️ විධානය:* 💝.agm💝
 
 *✖ විස්තරය:* 💝it sends good morning text message💝
 
-*🕊️ විධානය:* 💝.tgn💝
+*🕊️ විධානය:* 💝.agn💝
 
 *✖ විස්තරය:* 💝it sends good night text message💝
 
@@ -606,11 +606,11 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
 
 *✖ විස්තරය:* 💝ඔබ mention කරන text එක carbon.sh මඟින් carbon image කරයි.💝
 
-*🕊️ විධානය:* 💝.tgm💝
+*🕊️ විධානය:* 💝.agm💝
 
 *✖ විස්තරය:* 💝it sends good morning text message💝
 
-*🕊️ විධානය:* 💝.tgn💝
+*🕊️ විධානය:* 💝.agn💝
 
 *✖ විස්තරය:* 💝it sends good night text message💝
 
