@@ -18,8 +18,8 @@ if (Config.WORKTYPE == 'private') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '.asiata'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '.rules'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
  ]
 
 const btn = {
@@ -33,7 +33,7 @@ const btn = {
             
             var image = await axios.get ('https://telegra.ph/file/1851f11236282e46d5360.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 👨‍💻ASIATA බොටා 😈\n\n🕊️ Developer: THISAN\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 🇱🇰ASIATA WA BOT 😈\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  💝ѕℓ αѕιαтα❤"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -41,8 +41,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '.asiata'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '.rules'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
@@ -94,8 +94,8 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '.asiata'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '.rules'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
  ]
 
 const btn = {
@@ -115,7 +115,7 @@ const btn = {
         await new Promise(r => setTimeout(r, 1000));
 
  
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 👨‍💻ASIATA බොටා 😈\n\n🕊️ Developer: THISAN\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 🇱🇰ASIATA WA BOT 😈\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  💝ѕℓ αѕιαтα❤"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -123,8 +123,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '.asiata'}, type: 1},//jakakkak
-  {buttonId: 'MEN', buttonText: {displayText: '.rules'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
+  {buttonId: 'MEN', buttonText: {displayText: 'Bad😞'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
