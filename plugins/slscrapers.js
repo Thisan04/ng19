@@ -38,7 +38,7 @@ var gis = require('g-i-s');
 if (config.WORKTYPE == 'private') {
     
     
-Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text);
         let arama = await yts(match[1]);
@@ -385,7 +385,7 @@ Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, 
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🐼 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -435,7 +435,7 @@ Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, 
             const response = await got(url);
             const json = JSON.parse(response.body);
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*➢  ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            '*🐼' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
@@ -549,7 +549,7 @@ Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, 
 else if (config.WORKTYPE == 'public') {
     
     
-    Asiata.addcommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text, {quoted: message.data});
         let arama = await yts(match[1]);
@@ -797,7 +797,7 @@ else if (config.WORKTYPE == 'public') {
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
             return await message.reply('*➢  ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            + '*🕊️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
