@@ -38,7 +38,7 @@ var gis = require('g-i-s');
 if (config.WORKTYPE == 'private') {
     
     
-Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text);
         let arama = await yts(match[1]);
@@ -549,7 +549,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
 else if (config.WORKTYPE == 'public') {
     
     
-    Asiata.addcommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text, {quoted: message.data});
         let arama = await yts(match[1]);
