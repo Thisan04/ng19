@@ -18,14 +18,14 @@ if (Config.WORKTYPE == 'private') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
  ]
 
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
-    contentText: "😇 How Are You 🙃",
-    footerText: '🐼 SL-ASIATA BOT 🇱🇰',
+    contentText: "🎎ƝЄƜ ƔЄƦƧƖƠƝ ƇƠMMƖƝ ƧƠƠƝ🎎",
+    footerText: '🔥sʟ ᴀsɪᴀᴛᴀ © ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ🔥',
     buttons: buttons,
     headerType: 1
 }
@@ -33,7 +33,7 @@ const btn = {
             
             var image = await axios.get ('https://telegra.ph/file/1851f11236282e46d5360.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 🇱🇰ASIATA WA BOT 😈\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  💝ѕℓ αѕιαтα❤"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "Hey There! Bot online now.🏴‍☠🔥\n\n🕊️ My name : SL-ASIATA🧚‍♂️\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\nThank For Using 🦸‍♂*ASIATA*"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -41,8 +41,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
@@ -94,14 +94,14 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: 'Bad😞'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
  ]
 
 const btn = {
    // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "😇 HOW ARE YOU 🙃",
-    footerText: '🐼BY SL-ASIATA BOT🇱🇰',
+    contentText: "🎎ƝЄƜ ƔЄƦƧƖƠƝ ƇƠMMƖƝ ƧƠƠƝ🎎",
+    footerText: '🔥sʟ ᴀsɪᴀᴛᴀ © ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ🔥',
     buttons: buttons,
     headerType: 1
 }
@@ -115,7 +115,7 @@ const btn = {
         await new Promise(r => setTimeout(r, 1000));
 
  
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "හායිම් මන් දැන් ඔන්ලයින්🙃මගෙන් මොනවද වෙන්න ඕන ගායිස්💝 🕊️\n\n🕊️ My name : 🇱🇰ASIATA WA BOT 😈\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\n🕊️ආසියාටා ගැම්මක් තමා🐼  💝ѕℓ αѕιαтα❤"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "Hey There! Bot online now.🏴‍☠🔥\n\n🕊️ My name : SL-ASIATA🧚‍♂️\n\n🕊️ Creater : THISAN & MIHIRANGA\n\n🕊️Devaloper :KAVEESHA NETHUM\n\nThank For Using 🦸‍♂*ASIATA*"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -123,13 +123,13 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: 'Fine😊'}, type: 1},//jakakkak
-  {buttonId: 'MEN', buttonText: {displayText: 'Bad😞'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MEN', buttonText: {displayText: '⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
-    contentText: "😇 HOW ARE YOU 🙃",
-    footerText: '🐼BY SL-ASIATA BOT🇱🇰',
+    contentText: "🎎ƝЄƜ ƔЄƦƧƖƠƝ ƇƠMMƖƝ ƧƠƠƝ🎎",
+    footerText: '🔥sʟ ᴀsɪᴀᴛᴀ © ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ🔥',
     buttons: buttons,
     headerType: 1
 }
@@ -164,7 +164,18 @@ const btn = {
         );
     }));
 
-    Asiata.addcommand({pattern: 'version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
+    Asiata.addcommand({pattern: '🎎version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
+    
+        await message.client.sendMessage(message.jid, 
+                `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
+                '```Installed version :```\n' +
+                ' V 3.0.0 - Public'+
+                `\n\n🕊️ Check github for bot:  https://github.com/Thisan04/SL-ASIATA`
+           , MessageType.text);
+            
+        }));
+
+    Asiata.addcommand({pattern: '⚔️github', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
