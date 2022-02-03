@@ -38,7 +38,7 @@ var gis = require('g-i-s');
 if (config.WORKTYPE == 'private') {
     
     
-Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+Asiata.addcommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text);
         let arama = await yts(match[1]);
@@ -83,7 +83,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
             });
     }));
     
-    Asiata.addcommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -167,7 +167,7 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
       
      
 
-    Asiata.addcommand({pattern: 'videooo ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -549,19 +549,13 @@ Asiata.addcommand({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (
 else if (config.WORKTYPE == 'public') {
     
     
-    Asiata.addcommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text, {quoted: message.data});
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   💝ASIATA WA BOT💝`,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,config.SD,MessageType.text, {quoted: message.data});
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -583,18 +577,12 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   💝ASIATA WA BOT💝`+'\n' });
+                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+`config.SU`+'\n' });
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }, quoted: message.data});
             });
     }));
     
-    Asiata.addcommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asiata.addcommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -676,7 +664,7 @@ else if (config.WORKTYPE == 'public') {
   
       
 	
-	Asiata.addcommand({pattern: 'videooo ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+	Asiata.addcommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -701,22 +689,14 @@ else if (config.WORKTYPE == 'public') {
         } catch {
             return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         }
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯`,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,config.VD,MessageType.text);
 
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯`,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, ptt: false, quoted: message.data});
+            reply = await message.client.sendMessage(message.jid,config.VU,MessageType.text);
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video,  { caption: '\n```Video Name :\n'+ title +' ```\n\n'+`🎎αѕιαтα вσт🔥`+'\n' });
         });
     }));
 	
