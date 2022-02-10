@@ -48,7 +48,7 @@ var thumb = await axios.get("https://telegra.ph/file/dfa0564731ced96dc2b73.jpg",
 
    if (!message.reply_message) {
 
-   await message.client.sendMessage(message.jid, "*Need a user to hack ! ☠️*", MessageType.text, {quoted: message.data })
+   await message.client.sendMessage(message.jid, "*Need a user to hack ! ☠️*", MessageType.text, {quoted: message.data });
 
    } else if (message.reply_message) {
 
