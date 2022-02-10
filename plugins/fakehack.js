@@ -1,14 +1,3 @@
-/* CORDED BY 2021 SL-ASIATA THISAN 
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-කොපි ගහල අහුවෙන්න එපා අමාරුවෙන් කෝඩ් කරේ 😑
-THISAN 
-    _    ____ ___    _  _____  _
-   / \  / ___|_ _|  / \|_   _|/ \
-  / _ \ \___ \| |  / _ \ | | / _ \
- / ___ \ ___) | | / ___ \| |/ ___ \
-/_/   \_\____/___/_/   \_\_/_/   \_\
-*/
 
 const Asiata = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
@@ -53,8 +42,8 @@ host: drive.google.com
 *ʜᴀᴄᴋᴇᴅ ʙʏ: ASIATA🏴‍☠*
 `
 
-    Asiata.addcommand({pattern: 'hack$', fromMe: WType, desc: HACK_DESC, deleteCommand: true}, (async (message, match) => {
-
+     Asiata.addcommand({pattern: 'hack ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+   
 var thumb = await axios.get("https://telegra.ph/file/dfa0564731ced96dc2b73.jpg", {responseType: "arraybuffer"});
 
    if (!message.reply_message) {
