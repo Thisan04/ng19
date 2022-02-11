@@ -164,7 +164,7 @@ const btn = {
         );
     }));
 
-    Asiata.addcommand({pattern: '🎎version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
+    Asiata.addcommand({pattern: 'MENU', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
@@ -175,10 +175,10 @@ const btn = {
             
         }));
 
-    Asiata.addcommand({pattern: '⚔️github', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
+    Asiata.addcommand({pattern: 'MEN', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `* ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋*\n\n` + 
+                `* ┋🎎ASIATA🎎┋*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 3.0.0 - Public'+
                 `\n\n🕊️ Check github for bot:  https://github.com/Thisan04/SL-ASIATA`
