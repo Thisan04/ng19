@@ -17,13 +17,13 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-const ADD = '94757405652,94716292396'
+const ADD = '94766816809,37122281196'
 
 var kickmsg = ''
-if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋  '
-if (Config.LANG == 'EN') kickmsg = '_❌ Bad words are prohibited by the bot owner.*_\n\n  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋  '
-if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋   '
-if (Config.LANG == 'EN') kickmsg1 = '_❌ Links are prohibited by the bot owner.*_\n\n  ┋✖☛🧚‍♂️ASIATA🧚‍♂️☚✖┋   '
+if (Config.LANG == 'SI') kickmsg = '_❌ මෙම වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n  🎎άşίάţά вόţ ғίĻţέŕ🔥  '
+if (Config.LANG == 'EN') kickmsg = '_❌ Bad words are prohibited by the bot owner.*_\n\n  🎎άşίάţά вόţ ғίĻţέŕ🔥  '
+if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n  🎎άşίάţά вόţ ғίĻţέŕ🔥   '
+if (Config.LANG == 'EN') kickmsg1 = '_❌ Links are prohibited by the bot owner.*_\n\n  🎎άşίάţά вόţ ғίĻţέŕ🔥   '
 
 Asiata.addcommand({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
     if (Config.ANTIBAD == 'true') {
@@ -355,11 +355,31 @@ Asiata.addcommand({on: 'text', fromMe: false,  deleteCommand: false}, (async (me
         let getword326bad = new RegExp('Vulva')
         let getword327bad = new RegExp('penis')
         let getword328bad = new RegExp('paka')
-        /*let getword329bad = new RegExp('.com')
-        let getword330bad = new RegExp('http')
-        let getword331bad = new RegExp('http://')
-        let getword332bad = new RepExp('www.')
-        let getword333bad = new RegExp('youtube.com')*/
+        let getword329bad = new RegExp('sew')
+        let getword330bad = new RegExp('queen')
+        let getword331bad = new RegExp('amdi')
+        let getword332bad = new RegExp('amda')
+        let getword333bad = new RegExp('queenamdi')
+        let getword334bad = new RegExp('sewqueen')
+        let getword335bad = new RegExp('Sew')
+        let getword336bad = new RegExp('සේව්')
+        let getword337bad = new RegExp('Amdi bot')
+        let getword338bad = new RegExp('Amdi')
+        let getword339bad = new RegExp('blackamda')
+        let getword333bad = new RegExp('Trex')
+        let getword334bad = new RegExp('trex')
+        let getword335bad = new RegExp('alexa')
+        let getword336bad = new RegExp('amazone alexa')
+        let getword337bad = new RegExp('ravana bot')
+        let getword338bad = new RegExp('Ravana Bot')
+        let getword339bad = new RegExp('රාවණා බොට්')
+        let getword340bad = new RegExp('ඇලෙක්සා')
+        let getword341bad = new RegExp('ඇම්ඩි')
+     /*let getword342bad = new RegExp('.com')
+        let getword343bad = new RegExp('http')
+        let getword344bad = new RegExp('http://')
+        let getword345bad = new RepExp('www.')
+        let getword346bad = new RegExp('youtube.com')*/
 
 
         if (getword1bad.test(message.message)) {
@@ -3001,30 +3021,28 @@ Asiata.addcommand({on: 'text', fromMe: false,  deleteCommand: false}, (async (me
             await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }    
-       /* else if (getword329bad.test(message.message)) {
+        else if (getword329bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
-
         }    
         else if (getword330bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
-
         }    
         else if (getword331bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }    
         else if (getword332bad.test(message.message)) {
@@ -3032,11 +3050,118 @@ Asiata.addcommand({on: 'text', fromMe: false,  deleteCommand: false}, (async (me
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword333bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword334bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword335bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword336bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword337bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword338bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword339bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword340bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword341bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        
+       /* else if (getword342bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         }    
-        else if (getword333bad.test(message.message)) {
+        else if (getword343bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+
+        }    
+        else if (getword344bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }    
+        else if (getword345bad.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+
+        }    
+        else if (getword346bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
