@@ -1612,34 +1612,6 @@ Asiata.addcommand({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: tru
 
 }));
 
-Asiata.addcommand({pattern: 'kickall ?(.*)', onlyGroup: true, fromMe: true, desc: Lang.KICKALL_DESC}, (async (message, match) => {
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-    
-    if (match[1].includes('admins')) {
-        let users = participants.filter((member) => (!member.isAdmin == false || member.includes(message.client.user.jid)));
-        for (let user of users) {
-          await message.client.sendMessage(message.jid, Lang.KICKING_ADMINS, MessageType.text);
-          await new Promise((r) => setTimeout(r, 1000));
-          await message.groupRemove(message.jid, user);
-          await message.client.sendMessage(message.jid, Lang.KICKED_ADMINS, MessageType.text);
-    } else if (match[1].includes('members')) {
-        let users = participants.filter((member) => (!member.isAdmin == true || member.includes(message.client.user.jid)));
-        for (let user of users) {
-          await message.client.sendMessage(message.jid, Lang.KICKING_MEMBERS, MessageType.text);
-          await new Promise((r) => setTimeout(r, 1000));
-          await message.groupRemove(message.jid, user);
-          await message.client.sendMessage(message.jid, Lang.KICKED_MEMBERS, MessageType.text);
-    } else {
-        let users = participants.filter((member) => (!member.includes(message.client.user.jid)));
-        for (let user of users) {
-          await message.client.sendMessage(message.jid, Lang.KICKING_EVERYONE, MessageType.text);
-          await new Promise((r) => setTimeout(r, 1000));
-          await message.groupRemove(message.jid, user);
-          await message.client.sendMessage(message.jid, Lang.KICKED_EVERYONE, MessageType.text);
-    }
-}));
-
 /*
 Asiata.addcommand({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
     const url = `https://gist.githubusercontent.com/Thisan01/96e064f5804e7a32a5fa6c56aa8d4113/raw/6482dcf2cffe2830cfd9b6933cf29d543227fa2c/gistfile1.txt`;
