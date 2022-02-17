@@ -18,8 +18,8 @@ if (Config.WORKTYPE == 'private') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '.🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '.⚔️github'}, type: 1},
  ]
 
 const btn = {
@@ -41,8 +41,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '.🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '.⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
@@ -63,7 +63,7 @@ const btn = {
      }
     }));
 
-    Asiata.addcommand({pattern: 'MENU', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Asiata.addcommand({pattern: '🎎version', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -76,7 +76,7 @@ const btn = {
         );
     }));
 
-    Asiata.addcommand({pattern: 'MNU', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_V}, (async (message, match) => {    
+    Asiata.addcommand({pattern: '⚔️github', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `*🎎αѕιαтα вσт🔥*\n\n` + 
@@ -94,8 +94,8 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '.🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '.⚔️github'}, type: 1},
  ]
 
 const btn = {
@@ -123,8 +123,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '.🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '.⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
@@ -151,7 +151,7 @@ const btn = {
      }
     }));
 
-    Asiata.addcommand({pattern: 'MENU', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Asiata.addcommand({pattern: '🎎version', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -164,7 +164,7 @@ const btn = {
         );
     }));
 
-    Asiata.addcommand({pattern: 'MNU', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
+    Asiata.addcommand({pattern: '⚔️github', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `*🎎αѕιαтα вσт🔥*\n\n` + 
