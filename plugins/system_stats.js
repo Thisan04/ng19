@@ -18,8 +18,8 @@ if (Config.WORKTYPE == 'private') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: '.MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: '.MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
  ]
 
 const btn = {
@@ -41,8 +41,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: '.MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: '.MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
@@ -94,8 +94,8 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: '.MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: '.MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
  ]
 
 const btn = {
@@ -123,8 +123,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: '.MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
-  {buttonId: '.MNU', buttonText: {displayText: '⚔️github'}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '🎎version'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '⚔️github'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/1851f11236282e46d5360.jpg',
