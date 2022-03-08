@@ -39,7 +39,7 @@ const btn = {
     Buttons: Buttons
 }
 
-const sendMsg = await sock.sendMessage(id, btn)
+await message.client.sendMessage(id, btn)
 
     // End
  }));
