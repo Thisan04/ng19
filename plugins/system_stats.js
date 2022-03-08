@@ -39,7 +39,7 @@ const btn = {
     Buttons: Buttons
 }
 
-await message.client.sendMessage(message.jid, Buttons, MessageType.btn)
+await message.client.sendMessage(message.jid, btn)
 
     
 
